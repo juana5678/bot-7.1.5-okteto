@@ -1,0 +1,10 @@
+version: '3.7.13'
+
+services:
+  web:
+    build: .
+    Environment:
+Api_Id: 'Api_Id'
+Api_Hash: 'Api_Hash'
+Bot_Token: 'Bot_Token'
+Tl_Admin_User: 'Tl_Admin_User
