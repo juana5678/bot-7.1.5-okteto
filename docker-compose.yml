@@ -3,6 +3,19 @@ version: '3.7.13'
 services:
   web:
     build: .
+    ports:
+    - "5000:5000"
+    volumes:
+    - .:/code
+    - logvolume01:/var/log
+    links:
+    - redis
+    redis:
+    imagen: redis
+    volumes:
+    logvolume01: {}
+    [root@nodo1 composel}
+    ] #
     Environment:
 Api_Id: 'Api_Id'
 Api_Hash: 'Api_Hash'
