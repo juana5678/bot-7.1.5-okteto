@@ -1,8 +1,11 @@
-FROM python:3.7.13
+FROM python-3.10.4
 
-RUN apt-get update && apt-get install --yes pipenv
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY ./ /usr/src/app/
-RUN pipenv install --deploy --ignore-pipfile
-CMD pipenv run python main.py
+COPY requirements.txt /app/
+
+RUN pip3 install -r requirements.txt
+
+COPY . /app
+
+CMD python3 botclient.py
