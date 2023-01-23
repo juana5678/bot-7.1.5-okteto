@@ -620,7 +620,7 @@ def onmessage(update,bot:ObigramClient):
                 # set in debug
             #    api_id = 16536294
             #    api_hash = '0c780f6db3124fafbdc3dcde437e6f21'
-            #    bot_token = '5141533560:AAFnwXr6CpVa8RJo7M0YS7yzaLTniQK1Gd8'
+            #    bot_token = '5897877295:AAHHKMCeN_9BUXF-X35qgTY2xQXRyrTT_dI'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
